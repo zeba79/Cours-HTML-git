@@ -1,0 +1,100 @@
+*{ font-family: 'Acme', sans-serif;} /* étoile applique sur toute la page*/
+
+body{
+    
+    background-color:white; /*arrièreplan*/
+    margin:0 auto;  /*marge*/
+    padding: 0 auto;  /*bas de page*/
+    color: white;  /*couleur des textes*/
+  
+}
+
+/*flexbox = c'est une sorte de boite, aller voir sur le site de flexboxfroggy.com */
+header{
+background:url(header-section.jpg) 100% fixed;
+height: 50vh; /* VH = View Height*/
+display:flex; /* display = affichage*/
+flex-direction: column ;
+justify-content: center;
+align-items: center ;
+line-height: 5px ; /* hauteur entre deux textes*/
+}
+
+h1.titre{
+    font-size: 70px;
+    text-transform: uppercase; /*tout mettre en majuscule*/
+}
+
+h2.slogan{
+    font-size: 45px;
+    font-style:italic;
+}
+ /* ceci est un style qui a été effacé mais qui était lié à a liste ul 
+ ul.destinations li{
+    color: green;
+    display: inline-block;
+    background-color: grey;
+    margin: 12px;
+    padding: 15px;
+}
+*/
+
+div.destinations-item{
+    color:blue;
+    width: 250px;
+    height:300px;
+    margin:10px;
+    padding: 15px;
+    position: relative; /* relative = l'élément peut bouger*/
+    flex:1 0 29%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+     }
+
+
+div.destinations-group{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:0px 20px 0 20px;
+}
+
+
+.barcelonne{background:url(barcelone.jpg) ;}
+.dubai{ background: url(dubai.jpg);}
+.londres{background: url(londres.jpg);}
+.paris{background: url(paris.jpg);}
+.philippines{background: url(philippines.jpg)}
+.tunis{ background: url(tunis.jpg);}
+
+
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    
+}
+
+span.nom{
+    position: relative;
+    color:#373737;
+    background-color: white;
+    top:20px;
+    float:left;
+    padding:15px;
+    font-size: 15px;
+}
+
+span.prix{
+    position: relative;
+    color: rgb(243, 243, 220);
+    background-color: rgb(247, 158, 41);
+    top:265px;
+    float: left;
+    padding: 15px;
+    font-size: 15px;
+}
